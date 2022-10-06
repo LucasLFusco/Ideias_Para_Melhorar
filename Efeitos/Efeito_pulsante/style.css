@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bola_pulsante {
+    
+    margin-left: 50%;
+    margin-top: 13rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #80f9a4;
+    animation: pulsante 1.5s infinite;
+}
+
+@keyframes pulsante {
+    0% {
+        box-shadow: #80f98a 0 0 0 0;
+    }
+
+    100% {
+        box-shadow: #8b80f900 0 0 0 16px;
+    }
+}

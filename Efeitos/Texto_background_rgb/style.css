@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#background {
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(247, 247, 247, 0.1);
+    background: linear-gradient(to right,
+            hsl(0,100%,50%),
+            hsl(30,100%,50%),
+            hsl(60,100%,50%),
+            hsl(60,100%,50%),
+            hsl(150,100%,50%),
+            hsl(180,100%,50%),
+            hsl(210,100%,50%),
+            hsl(240,100%,50%),
+            hsl(270,100%,50%),
+            hsl(300,100%,50%),
+            hsl(330,100%,50%),
+            hsl(0,100%,50%));
+           
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2rem;
+    text-align: center;
+    animation: sTransition 10s linear infinite;
+}
+
+@keyframes sTransition {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
